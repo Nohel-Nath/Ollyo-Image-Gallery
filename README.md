@@ -1,67 +1,45 @@
-# Getting Started with Create React App
+Image Gallery
+The Image Gallery webapp is a web application built using React. It allows users to upload, manage, and display images in a gallery format. Users can add images, select and delete multiple images, and rearrange the image order through drag and drop.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Url Link
+https://ollyo-image-gallery-ruby.vercel.app/
+Features
+Image Upload
+Users can add images to the gallery by clicking the "Add Images" button and selecting one image file.
 
-## Available Scripts
+Image Selection
+Users can select images by clicking the checkbox associated with each image. The number of selected images is displayed at the top, and users can choose to delete the selected images.
 
-In the project directory, you can run:
+Image Deletion
+By clicking the "Delete Files" button, users can delete the selected images from the gallery.
 
-### `npm start`
+Drag and Drop
+Images can be rearranged using drag and drop. Users can drag an image to change its position within the gallery.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Code Structure
+1.The main component is Home, which represents the gallery and handles most of the application logic.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2.useState is used to manage different aspects of the gallery's state, such as the images, selected images, and the feature image index.
 
-### `npm test`
+3.Image selection, deletion, and drag-and-drop functionality are handled by functions within the Home component.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4.The handleImageChange function allows users to add images to the gallery.
 
-### `npm run build`
+5.The handleDeleteImages function lets users delete selected images.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6.Drag and drop functionality is implemented through the handleDragOver, handleDrop, and handleDragStart functions.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Technologies Used
+Frontend->
+React.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+HTML/CSS
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
+Contact
+Name : Nohel Kumar Nath
+Gmail : nohelcse16@gmail.com
+Github : https://github.com/Nohel-Nath
+LeetCode : https://leetcode.com/nohelcse16/
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
