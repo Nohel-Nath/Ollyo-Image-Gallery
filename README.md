@@ -1,4 +1,4 @@
-Image Gallery->
+# Image Gallery 
 The Image Gallery webapp is a web application built using React. It allows users to upload, manage, and display images in a gallery format. Users can add images, select and delete multiple images, and rearrange the image order through drag and drop.
 
 ## Live Url Link
