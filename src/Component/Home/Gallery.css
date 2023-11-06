@@ -1,0 +1,206 @@
+.hello {
+  height: 50%;
+  width: 35%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(15, 15, 15, 0.26);
+  margin-left: 400px;
+  margin-top: 100px;
+}
+
+.part {
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+.delete-button {
+  height: 30px;
+  width: 90px;
+  background-color: white;
+  border: white;
+  color: #ff5733;
+  font-weight: 700;
+  margin-left: 300px;
+}
+
+.my-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 0.05fr);
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.my-image {
+  position: relative;
+  border-radius: 5%;
+}
+
+.featured-image {
+  grid-column: span 2;
+  grid-row: span 2;
+  height: 200px;
+  width: 200px;
+  border-radius: 5%;
+  border: 1px solid rgb(216, 211, 211);
+}
+
+.task {
+  background-color: black;
+  border-radius: 5%;
+  height: 200px;
+  width: 200px;
+}
+
+.featured-image-class {
+  height: 200px;
+  width: 200px;
+  border-radius: 5%;
+  border: 1px solid rgb(216, 211, 211);
+}
+
+.featured-image-class:hover {
+  opacity: 50%;
+}
+
+.task1 {
+  width: 100px;
+  height: 96px;
+  background-color: black;
+  border-radius: 5%;
+}
+.my-rounded-xl {
+  border-radius: 5%;
+  border: 1px solid rgb(216, 211, 211);
+  height: 96px;
+  width: 100px;
+}
+
+.my-rounded-xl:hover {
+  opacity: 50%;
+}
+
+.image-checkbox-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+
+.image-checkbox-container .image-checkbox {
+  display: none;
+}
+
+.my-image:hover .image-checkbox-container .image-checkbox,
+.image-checkbox-container .image-checkbox:checked {
+  display: block;
+}
+
+.my-button {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: white;
+  color: white;
+  height: 96px;
+  width: 100px;
+  border: 1px dotted grey;
+  border-radius: 5%;
+}
+
+@media screen and (max-width: 480px) {
+  .hello {
+    margin-left: 120px;
+    width: 230px;
+  }
+
+  .my-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 0.05fr);
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .delete-button {
+    margin-left: 150px;
+    transform: translate(1px, -23px);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  .hello {
+    margin-left: 120px;
+    width: 330px;
+  }
+
+  .my-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 0.05fr);
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .delete-button {
+    margin-left: 200px;
+    transform: translate(1px, -23px);
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .hello {
+    width: 430px;
+    margin-left: 170px;
+  }
+
+  .my-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 0.05fr);
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .delete-button {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  .hello {
+    width: 535px;
+    margin-left: 250px;
+  }
+
+  .my-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 0.05fr);
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .delete-button {
+    margin-left: 300px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .hello {
+    width: 535px;
+    margin-left: 300px;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1500px) {
+  .hello {
+    width: 540px;
+    margin-left: 400px;
+  }
+}
+
+@media screen and (min-width: 1501px) {
+  .hello {
+    width: 545px;
+    margin-left: 500px;
+  }
+}
